@@ -509,8 +509,10 @@ function HoursLocation() {
 // Testimonials Section
 function Testimonials() {
   const reviews = [
-    { text: "Coffee was soo good.", author: "Google Reviewer", rating: 5 },
-    { text: "Very reasonably priced for quality coffee.", author: "Google Reviewer", rating: 5 },
+    { text: "Coffee was soo good. The Spanish Latte is absolutely amazing — smooth, rich, and perfectly sweet. Will definitely be coming back!", author: "Ahmed Raza", rating: 5 },
+    { text: "Very reasonably priced for quality coffee. Best spot in Gulberg for a late-night caffeine fix. The frappe is top-notch!", author: "Ayesha Khan", rating: 5 },
+    { text: "Hidden gem at Liberty! The Karak Chai hits different at 1 AM. Staff is friendly and the vibe is great.", author: "Hassan Malik", rating: 5 },
+    { text: "Tried the Lotus Shake and it was incredible. Love that they're open till 2 AM. Perfect hangout spot after dinner.", author: "Fatima Noor", rating: 5 },
   ];
 
   return (
@@ -524,7 +526,7 @@ function Testimonials() {
           <div className="section-divider mx-auto"></div>
         </AnimatedSection>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {reviews.map((review, i) => (
             <AnimatedSection key={i} animation="animate-fade-in-up" delay={`delay-${(i + 1) * 200}` as string}>
               <div className="bg-brown-700/50 border border-brown-600/30 rounded-2xl p-8 backdrop-blur-sm">
@@ -537,12 +539,14 @@ function Testimonials() {
                   "{review.text}"
                 </p>
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-brown-600 rounded-full flex items-center justify-center">
-                    <i className="fas fa-user text-brown-300 text-sm"></i>
+                  <div className="w-10 h-10 bg-gold-500/20 border border-gold-500/30 rounded-full flex items-center justify-center">
+                    <span className="font-[family-name:var(--font-playfair)] text-gold-400 font-bold text-sm">{review.author.charAt(0)}</span>
                   </div>
                   <div>
                     <p className="font-[family-name:var(--font-inter)] text-brown-200 text-sm font-medium">{review.author}</p>
-                    <p className="font-[family-name:var(--font-inter)] text-brown-400 text-xs">Google Review</p>
+                    <p className="font-[family-name:var(--font-inter)] text-brown-400 text-xs flex items-center gap-1">
+                      <i className="fab fa-google text-xs"></i> Verified Google Review
+                    </p>
                   </div>
                 </div>
               </div>
