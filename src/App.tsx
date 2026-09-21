@@ -60,7 +60,7 @@ function Navbar() {
         <a href="#home" className="flex items-center gap-2">
           <span className="text-2xl">☕</span>
           <span className="font-[family-name:var(--font-playfair)] text-xl font-bold text-white tracking-wide">
-            Brown Brew
+            California Cafe
           </span>
         </a>
 
@@ -128,14 +128,14 @@ function Hero() {
           </p>
         </div>
         <h1 className="animate-fade-in-up delay-200 font-[family-name:var(--font-playfair)] text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight">
-          Brown Brew<br />
-          <span className="gradient-text">Coffee</span>
+          California<br />
+          <span className="gradient-text">Cafe</span>
         </h1>
         <p className="animate-fade-in-up delay-400 font-[family-name:var(--font-inter)] text-brown-200 text-lg md:text-xl mb-4 max-w-2xl mx-auto">
-          Specialty coffee crafted with passion, served with love.
+          Specialty coffee crafted with passion, served with California sunshine.
         </p>
         <p className="animate-fade-in-up delay-500 font-[family-name:var(--font-inter)] text-brown-300 text-sm md:text-base mb-10">
-          Liberty Market, Gulberg III — Lahore
+          Venice Beach — Los Angeles, California
         </p>
         <div className="animate-fade-in-up delay-600 flex flex-col sm:flex-row gap-4 justify-center">
           <a
@@ -175,7 +175,7 @@ function About() {
               <div className="rounded-2xl overflow-hidden shadow-2xl">
                 <img
                   src="https://image.qwenlm.ai/generated-images/2b356dc8-bcec-43fd-94c3-e43f5fcc0ff7/_result.png"
-                  alt="Brown Brew Coffee Shop Interior"
+                  alt="California Cafe Interior"
                   className="w-full h-[400px] lg:h-[500px] object-cover"
                 />
               </div>
@@ -196,14 +196,14 @@ function About() {
               </h2>
               <div className="section-divider mb-8"></div>
               <p className="font-[family-name:var(--font-inter)] text-brown-600 text-lg leading-relaxed mb-6">
-                At Brown Brew Coffee, we believe every cup tells a story. Located at the heart of Gulberg III, 
-                opposite the iconic Liberty Market, we're your go-to destination for premium specialty coffee 
-                in Lahore.
+                At California Cafe, we believe every cup tells a story. Located on the iconic Venice Beach Boardwalk, 
+                steps from the Pacific Ocean, we're your go-to destination for premium specialty coffee 
+                in Los Angeles.
               </p>
               <p className="font-[family-name:var(--font-inter)] text-brown-600 text-lg leading-relaxed mb-8">
                 From perfectly pulled espressos to creamy Spanish Lattes and indulgent ice cream shakes — 
                 every drink is crafted with carefully selected beans and served with warmth. Whether you're 
-                grabbing a quick coffee or settling in for the evening, we've got your brew.
+                grabbing a quick coffee before a surf session or settling in for the sunset, we've got your brew.
               </p>
               <div className="grid grid-cols-3 gap-6">
                 <div className="text-center">
@@ -233,35 +233,35 @@ function Menu() {
 
   const menuData: Record<string, { name: string; regular: string; large: string; icon?: string }[]> = {
     coffee: [
-      { name: 'Espresso', regular: '350', large: '500', icon: '☕' },
-      { name: 'Americano', regular: '450', large: '600', icon: '☕' },
-      { name: 'Cappuccino', regular: '550', large: '700', icon: '☕' },
-      { name: 'Cafe Latte', regular: '550', large: '700', icon: '☕' },
-      { name: 'Spanish Latte', regular: '650', large: '750', icon: '☕' },
-      { name: 'Flavored Latte', regular: '650', large: '750', icon: '☕' },
+      { name: 'Espresso', regular: '3.50', large: '4.50', icon: '☕' },
+      { name: 'Americano', regular: '4.00', large: '5.00', icon: '☕' },
+      { name: 'Cappuccino', regular: '4.50', large: '5.50', icon: '☕' },
+      { name: 'Cafe Latte', regular: '4.50', large: '5.50', icon: '☕' },
+      { name: 'Spanish Latte', regular: '5.50', large: '6.50', icon: '☕' },
+      { name: 'Flavored Latte', regular: '5.50', large: '6.50', icon: '☕' },
     ],
     cold: [
-      { name: 'Ice Latte', regular: '550', large: '700', icon: '🧊' },
-      { name: 'Spanish Latte (Cold)', regular: '650', large: '750', icon: '🧊' },
-      { name: 'Flavored Latte (Cold)', regular: '650', large: '750', icon: '🧊' },
-      { name: 'Frappe', regular: '700', large: '850', icon: '🧊' },
+      { name: 'Ice Latte', regular: '4.50', large: '5.50', icon: '🧊' },
+      { name: 'Spanish Latte (Cold)', regular: '5.50', large: '6.50', icon: '🧊' },
+      { name: 'Flavored Latte (Cold)', regular: '5.50', large: '6.50', icon: '🧊' },
+      { name: 'Frappe', regular: '6.00', large: '7.50', icon: '🧊' },
     ],
     tea: [
-      { name: 'Green Tea', regular: '250', large: '350', icon: '🍵' },
-      { name: 'Karak Chai', regular: '350', large: '500', icon: '🍵' },
-      { name: 'Peach Iced Tea', regular: '400', large: '550', icon: '🍑' },
-      { name: 'Hot Chocolate', regular: '600', large: '750', icon: '🍫' },
+      { name: 'Green Tea', regular: '3.00', large: '4.00', icon: '🍵' },
+      { name: 'Chai Latte', regular: '4.00', large: '5.00', icon: '🍵' },
+      { name: 'Peach Iced Tea', regular: '3.50', large: '4.50', icon: '🍑' },
+      { name: 'Hot Chocolate', regular: '4.50', large: '5.50', icon: '🍫' },
     ],
     shakes: [
-      { name: 'Double Chocolate Shake', regular: '700', large: '850', icon: '🍫' },
-      { name: 'Oreo Shake', regular: '700', large: '850', icon: '🍪' },
-      { name: 'Chocolate Brownie Shake', regular: '700', large: '850', icon: '🧁' },
-      { name: 'Lotus Shake', regular: '700', large: '850', icon: '🥤' },
+      { name: 'Double Chocolate Shake', regular: '6.00', large: '7.50', icon: '🍫' },
+      { name: 'Oreo Shake', regular: '6.00', large: '7.50', icon: '🍪' },
+      { name: 'Chocolate Brownie Shake', regular: '6.00', large: '7.50', icon: '🧁' },
+      { name: 'Lotus Shake', regular: '6.00', large: '7.50', icon: '🥤' },
     ],
     refreshments: [
-      { name: 'Smoothies', regular: '700', large: '850', icon: '🥤' },
-      { name: 'Chillers', regular: '350', large: '500', icon: '🧊' },
-      { name: 'Sodas', regular: '150', large: '200', icon: '🥤' },
+      { name: 'Smoothies', regular: '6.00', large: '7.50', icon: '🥤' },
+      { name: 'Chillers', regular: '4.00', large: '5.00', icon: '🧊' },
+      { name: 'Sodas', regular: '2.50', large: '3.50', icon: '🥤' },
     ],
   };
 
@@ -286,7 +286,7 @@ function Menu() {
           </h2>
           <div className="section-divider mx-auto mb-6"></div>
           <p className="font-[family-name:var(--font-inter)] text-brown-500 text-lg max-w-2xl mx-auto">
-            All prices in PKR. Available in Regular & Large sizes.
+            All prices in USD. Available in Regular & Large sizes.
           </p>
         </AnimatedSection>
 
@@ -330,11 +330,11 @@ function Menu() {
                 <div className="flex items-center gap-4 mt-4">
                   <div className="flex-1 bg-brown-50 rounded-lg p-3 text-center">
                     <p className="font-[family-name:var(--font-inter)] text-xs text-brown-400 uppercase tracking-wider mb-1">Regular</p>
-                    <p className="font-[family-name:var(--font-inter)] text-lg font-bold text-brown-800">Rs. {item.regular}</p>
+                    <p className="font-[family-name:var(--font-inter)] text-lg font-bold text-brown-800">${item.regular}</p>
                   </div>
                   <div className="flex-1 bg-brown-800 rounded-lg p-3 text-center">
                     <p className="font-[family-name:var(--font-inter)] text-xs text-brown-300 uppercase tracking-wider mb-1">Large</p>
-                    <p className="font-[family-name:var(--font-inter)] text-lg font-bold text-gold-400">Rs. {item.large}</p>
+                    <p className="font-[family-name:var(--font-inter)] text-lg font-bold text-gold-400">${item.large}</p>
                   </div>
                 </div>
               </div>
@@ -397,13 +397,13 @@ function BeansSection() {
 // Hours & Location Section
 function HoursLocation() {
   const hours = [
-    { day: 'Monday', time: '4:00 PM – 2:00 AM' },
-    { day: 'Tuesday', time: '4:00 PM – 2:00 AM' },
-    { day: 'Wednesday', time: '4:00 PM – 2:00 AM' },
-    { day: 'Thursday', time: '4:00 PM – 2:00 AM' },
-    { day: 'Friday', time: '4:00 PM – 2:00 AM' },
-    { day: 'Saturday', time: '4:00 PM – 2:00 AM' },
-    { day: 'Sunday', time: '4:00 PM – 2:00 AM' },
+    { day: 'Monday', time: '6:00 AM – 10:00 PM' },
+    { day: 'Tuesday', time: '6:00 AM – 10:00 PM' },
+    { day: 'Wednesday', time: '6:00 AM – 10:00 PM' },
+    { day: 'Thursday', time: '6:00 AM – 10:00 PM' },
+    { day: 'Friday', time: '6:00 AM – 11:00 PM' },
+    { day: 'Saturday', time: '7:00 AM – 11:00 PM' },
+    { day: 'Sunday', time: '7:00 AM – 9:00 PM' },
   ];
 
   return (
@@ -441,8 +441,8 @@ function HoursLocation() {
               </div>
               <div className="mt-6 bg-gold-500/10 border border-gold-500/20 rounded-xl p-4">
                 <p className="font-[family-name:var(--font-inter)] text-brown-700 text-sm text-center">
-                  <i className="fas fa-moon text-gold-500 mr-2"></i>
-                  Open every evening from 4 PM till late night!
+                  <i className="fas fa-sun text-gold-500 mr-2"></i>
+                  Open daily from early morning till evening!
                 </p>
               </div>
             </div>
@@ -464,17 +464,17 @@ function HoursLocation() {
                 <div>
                   <p className="font-[family-name:var(--font-inter)] text-sm text-brown-400 uppercase tracking-wider mb-2">Address</p>
                   <p className="font-[family-name:var(--font-inter)] text-brown-700 text-lg leading-relaxed">
-                    Caltex Petrol Pump, opp. Liberty Market,<br />
-                    Commercial Area Gulberg III,<br />
-                    Lahore, Pakistan
+                    1800 Ocean Front Walk,<br />
+                    Venice Beach,<br />
+                    Los Angeles, CA 90291
                   </p>
                 </div>
 
                 <div>
                   <p className="font-[family-name:var(--font-inter)] text-sm text-brown-400 uppercase tracking-wider mb-2">Phone</p>
-                  <a href="tel:+923255387690" className="font-[family-name:var(--font-inter)] text-brown-700 text-lg hover:text-gold-500 transition-smooth flex items-center gap-2">
+                  <a href="tel:+13105550142" className="font-[family-name:var(--font-inter)] text-brown-700 text-lg hover:text-gold-500 transition-smooth flex items-center gap-2">
                     <i className="fas fa-phone text-gold-500"></i>
-                    +92 325 5387690
+                    (310) 555-0142
                   </a>
                 </div>
 
@@ -488,7 +488,7 @@ function HoursLocation() {
 
                 <div className="pt-4">
                   <a
-                    href="https://maps.google.com/?q=Caltex+Petrol+Pump+Liberty+Market+Gulberg+Lahore"
+                    href="https://maps.google.com/?q=Venice+Beach+Boardwalk+Los+Angeles+CA"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 bg-brown-800 hover:bg-brown-700 text-white px-6 py-3 rounded-full transition-smooth font-[family-name:var(--font-inter)] text-sm font-medium"
@@ -509,10 +509,10 @@ function HoursLocation() {
 // Testimonials Section
 function Testimonials() {
   const reviews = [
-    { text: "Coffee was soo good. The Spanish Latte is absolutely amazing — smooth, rich, and perfectly sweet. Will definitely be coming back!", author: "Ahmed Raza", rating: 5 },
-    { text: "Very reasonably priced for quality coffee. Best spot in Gulberg for a late-night caffeine fix. The frappe is top-notch!", author: "Ayesha Khan", rating: 5 },
-    { text: "Hidden gem at Liberty! The Karak Chai hits different at 1 AM. Staff is friendly and the vibe is great.", author: "Hassan Malik", rating: 5 },
-    { text: "Tried the Lotus Shake and it was incredible. Love that they're open till 2 AM. Perfect hangout spot after dinner.", author: "Fatima Noor", rating: 5 },
+    { text: "Coffee was soo good. The Spanish Latte is absolutely amazing — smooth, rich, and perfectly sweet. Will definitely be coming back!", author: "Jake Thompson", rating: 5 },
+    { text: "Very reasonably priced for quality coffee. Best spot on Venice Beach for a morning caffeine fix. The frappe is top-notch!", author: "Emily Rodriguez", rating: 5 },
+    { text: "Hidden gem on the boardwalk! The Chai Latte hits different with that ocean breeze. Staff is friendly and the vibe is great.", author: "Marcus Johnson", rating: 5 },
+    { text: "Tried the Lotus Shake and it was incredible. Love the sunset views from the patio. Perfect hangout spot after a beach day.", author: "Sarah Mitchell", rating: 5 },
   ];
 
   return (
@@ -577,20 +577,20 @@ function Contact() {
           </h2>
           <div className="section-divider mx-auto mb-8"></div>
           <p className="font-[family-name:var(--font-inter)] text-brown-500 text-lg mb-10 max-w-2xl mx-auto">
-            Whether it's your morning espresso or a late-night frappe, we're here to make your day a little better. 
-            Drop by Brown Brew Coffee at Liberty!
+            Whether it's your morning espresso or an afternoon frappe, we're here to make your day a little better. 
+            Drop by California Cafe on Venice Beach!
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <a
-              href="tel:+923255387690"
+              href="tel:+13105550142"
               className="inline-flex items-center justify-center gap-3 bg-brown-800 hover:bg-brown-700 text-white px-8 py-4 rounded-full transition-smooth font-[family-name:var(--font-inter)] font-medium"
             >
               <i className="fas fa-phone"></i>
               Call Us Now
             </a>
             <a
-              href="https://maps.google.com/?q=Caltex+Petrol+Pump+Liberty+Market+Gulberg+Lahore"
+              href="https://maps.google.com/?q=Venice+Beach+Boardwalk+Los+Angeles+CA"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-3 border-2 border-brown-800 text-brown-800 hover:bg-brown-800 hover:text-white px-8 py-4 rounded-full transition-smooth font-[family-name:var(--font-inter)] font-medium"
@@ -608,7 +608,7 @@ function Contact() {
             <a href="#" className="w-12 h-12 bg-brown-100 hover:bg-brown-800 hover:text-white text-brown-600 rounded-full flex items-center justify-center transition-smooth">
               <i className="fab fa-whatsapp text-xl"></i>
             </a>
-            <a href="tel:+923255387690" className="w-12 h-12 bg-brown-100 hover:bg-brown-800 hover:text-white text-brown-600 rounded-full flex items-center justify-center transition-smooth">
+            <a href="tel:+13105550142" className="w-12 h-12 bg-brown-100 hover:bg-brown-800 hover:text-white text-brown-600 rounded-full flex items-center justify-center transition-smooth">
               <i className="fas fa-phone text-xl"></i>
             </a>
           </div>
@@ -628,10 +628,10 @@ function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <span className="text-2xl">☕</span>
-              <span className="font-[family-name:var(--font-playfair)] text-xl font-bold text-white">Brown Brew Coffee</span>
+              <span className="font-[family-name:var(--font-playfair)] text-xl font-bold text-white">California Cafe</span>
             </div>
             <p className="font-[family-name:var(--font-inter)] text-brown-400 text-sm leading-relaxed">
-              Specialty coffee crafted with passion. Serving Lahore since 2026.
+              Specialty coffee crafted with passion. Serving Venice Beach since 2026.
             </p>
           </div>
 
@@ -653,15 +653,15 @@ function Footer() {
             <div className="space-y-3">
               <p className="font-[family-name:var(--font-inter)] text-brown-400 text-sm flex items-start gap-2">
                 <i className="fas fa-map-marker-alt text-gold-500 mt-1"></i>
-                Caltex Petrol Pump, opp. Liberty Market, Gulberg III, Lahore
+                1800 Ocean Front Walk, Venice Beach, Los Angeles, CA 90291
               </p>
               <p className="font-[family-name:var(--font-inter)] text-brown-400 text-sm flex items-center gap-2">
                 <i className="fas fa-phone text-gold-500"></i>
-                +92 325 5387690
+                (310) 555-0142
               </p>
               <p className="font-[family-name:var(--font-inter)] text-brown-400 text-sm flex items-center gap-2">
                 <i className="fas fa-clock text-gold-500"></i>
-                Daily: 4:00 PM – 2:00 AM
+                Mon–Thu: 6:00 AM – 10:00 PM | Fri–Sat: 6:00 AM – 11:00 PM | Sun: 7:00 AM – 9:00 PM
               </p>
             </div>
           </div>
@@ -669,7 +669,7 @@ function Footer() {
 
         <div className="border-t border-brown-800 pt-8 text-center">
           <p className="font-[family-name:var(--font-inter)] text-brown-500 text-sm">
-            © 2026 Brown Brew Coffee — Liberty. All rights reserved.
+            © 2026 California Cafe — Venice Beach. All rights reserved.
           </p>
         </div>
       </div>
